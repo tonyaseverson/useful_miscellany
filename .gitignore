@@ -3,3 +3,4 @@
 .RData
 .Ruserdata
 code_reuse_files
+*.md
