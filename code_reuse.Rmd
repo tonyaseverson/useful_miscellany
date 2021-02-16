@@ -70,9 +70,9 @@ vec <- print(ridiculous_repetition(myHW, 10), quote = FALSE)
 * `r hello`
 * Enthusiastic greeting: `r vec`
 
-## Useful links about reusing code
+## This repo and other useful links about reusing code
 
-
+* This repo: https://github.com/tonyaseverson/useful_miscellany
 * https://bookdown.org/yihui/rmarkdown-cookbook/managing-projects.html
   - Source external scripts (16.1)
   - Multiple code chunks (16.3)
