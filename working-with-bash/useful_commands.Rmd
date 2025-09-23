@@ -1,0 +1,18 @@
+---
+title: "Useful bash commands"
+author: "Tonya Severson"
+date: "`r Sys.Date()`"
+output: md_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## `touch`
+
+## `ls`
+
+
+
+

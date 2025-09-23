@@ -1,0 +1,36 @@
+---
+title: "Reticulate"
+output: html_notebook
+---
+
+```{r}
+library(reticulate)
+py_install("gffutils")
+os <- import("os")
+os$listdir(".")
+```
+
+```{python}
+import gffutils
+fn = gffutils.example_filename('/home/tonya/workbench/orthologues/prep/ncbi_dataset_boleracea/data/GCF_000695525.1/genomic.gff')
+print(open(fn).read())
+```
+```{python}
+# Parse gff file, infer feature relationships, and store features and relationships in the database
+db = gffutils.create_db(fn, dbfn='test.db', force=True, keep_order=True, merge_strategy='merge', sort_attribute_values=True)
+
+# Attach to the database
+db = gffutils.FeatureDB('test.db')
+
+# Print the schema
+print(gffutils.constants.SCHEMA)
+
+
+```
+
+```{python}
+
+gffutils.example_filename('mouse_extra_comma.gff3')
+
+```
+
