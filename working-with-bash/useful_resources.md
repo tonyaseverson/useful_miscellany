@@ -73,4 +73,7 @@ Books available that I’ve found particularly useful include:
 Other books are available on bash and pretty much every other
 programming language from O’Reilly.
 
+## Cheat Sheets
+
+* [Devhints website](https://devhints.io/bash)
 
